@@ -1,62 +1,507 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="hero">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I'm a passionate developer skilled in modern web technologies.</p>
-            <a href="#contact" class="button">Get in Touch</a>
-        </div>
-    </header>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a software developer with a love for creating dynamic and beautiful web applications. My focus is on understanding user needs and creating solutions that meet those standards.</p>
-    </section>
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">React</div>
-            <div class="skill">Node.js</div>
-            <div class="skill">Python</div>
-        </div>
-    </section>
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <h3>Project One</h3>
-                <p>A brief description of project one.</p>
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Waqar Ahmed - Web Applications Expert & Developer</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#home" class="nav__logo">Waqar Ahmed</a>
+            <div class="nav__menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#skills" class="nav__link">Skills</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#services" class="nav__link">Experience</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#projects" class="nav__link">Projects</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#contact" class="nav__link">Contact</a>
+                  </li>
+               </ul>
             </div>
-            <div class="project">
-                <h3>Project Two</h3>
-                <p>A brief description of project two.</p>
-            </div>
-            <div class="project">
-                <h3>Project Three</h3>
-                <p>A brief description of project three.</p>
-            </div>
-        </div>
-    </section>
+         </nav>
+      </header>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you would like to get in touch, please email me at myemail@example.com</p>
-    </section>
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__content">
+                  <h1 class="home__title">Hi, I'm <span>Waqar Ahmed</span></h1>
+                  <p class="home__description">Web Applications Expert and Consultant with 10+ years in technical software development. Experienced in a variety of platforms, technologies and frameworks.</p>
+                  <a href="#contact" class="button button--flex">
+                     Get In Touch <i class="ri-arrow-right-line"></i>
+                  </a>
+               </div>
+               <div class="home__scroll">
+                  <a href="#about" class="home__scroll-button button--flex">
+                     <span class="home__scroll-name">Scroll down</span>
+                     <i class="ri-arrow-down-2-line"></i>
+                  </a>
+               </div>
+            </div>
+         </section>
 
-    <footer>
-        <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
-    </footer>
-</body>
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My Introduction</span>
+
+            <div class="about__container container grid">
+               <img src="assets/img/about.jpg" alt="Waqar Ahmed" class="about__img">
+               <div class="about__data">
+                  <p class="about__description">
+                     I am a Web Applications Expert and Consultant with 10+ years in technical software development. 
+                     Experienced in a variety of platforms, technologies and frameworks. Critical Thinking, Analytical Skills 
+                     and Multitasking Attitude have always been my Strength. Willing to improve professional knowledge through 
+                     constant hard work, Reliable, dedicated and punctual, able to carry out duties under minimal supervision, 
+                     Pleasant and friendly in nature, Good Team Member, ability to build credible and effective working relationships.
+                  </p>
+
+                  <div class="about__info">
+                     <div>
+                        <span class="about__info-title">10+</span>
+                        <span class="about__info-name">Years Experience</span>
+                     </div>
+                     <div>
+                        <span class="about__info-title">50+</span>
+                        <span class="about__info-name">Projects Completed</span>
+                     </div>
+                     <div>
+                        <span class="about__info-title">Expert</span>
+                        <span class="about__info-name">Web Developer</span>
+                     </div>
+                  </div>
+
+                  <div class="about__qualification">
+                     <h3 class="about__qualification-title">Qualification</h3>
+                     <div class="about__qualification-item">
+                        <span class="about__qualification-degree">Master of Business Management</span>
+                        <span class="about__qualification-university">BPP University</span>
+                        <span class="about__qualification-year">Currently Studying</span>
+                     </div>
+                     <div class="about__qualification-item">
+                        <span class="about__qualification-degree">BESE (Software Engineering)</span>
+                        <span class="about__qualification-university">National University of Science and Technology (NUST)</span>
+                        <span class="about__qualification-year">2007-2011</span>
+                     </div>
+                     <div class="about__qualification-item">
+                        <span class="about__qualification-degree">F. Sc. Pre-Engineering</span>
+                        <span class="about__qualification-university">Govt College of Science Faisalabad</span>
+                        <span class="about__qualification-year">2005-2007</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SKILLS ====================-->
+         <section class="skills section" id="skills">
+            <h2 class="section__title">Skills & Technical Expertise</h2>
+            <span class="section__subtitle">My Technical Stack</span>
+
+            <div class="skills__container container grid">
+               <div class="skills__content">
+                  <h3 class="skills__title">Languages & Frameworks</h3>
+                  <div class="skills__box">
+                     <div class="skills__group">
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">PHP</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">MySQL</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">HTML5</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">CSS3</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="skills__group">
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">JavaScript & jQuery</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">Laravel Framework</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">CodeIgniter Framework</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">Bootstrap Framework</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="skills__content">
+                  <h3 class="skills__title">Specializations</h3>
+                  <div class="skills__box">
+                     <div class="skills__group">
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">WordPress CMS</h3>
+                              <span class="skills__level">Expert</span>
+                           </div>
+                        </div>
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">Custom Theme Development</h3>
+                              <span class="skills__level">Expert</span>
+                           </div>
+                        </div>
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">Plugin Development</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">API Integration</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="skills__group">
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">E-Commerce (Shopify, WooCommerce)</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">Payment Gateway Integration</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">Git & SVN</h3>
+                              <span class="skills__level">Advanced</span>
+                           </div>
+                        </div>
+                        <div class="skills__data">
+                           <i class="ri-checkbox-circle-line"></i>
+                           <div>
+                              <h3 class="skills__name">Responsive Design</h3>
+                              <span class="skills__level">Expert</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section" id="services">
+            <h2 class="section__title">Work Experience</h2>
+            <span class="section__subtitle">My Professional Journey</span>
+
+            <div class="services__container container grid">
+               <div class="services__content">
+                  <div>
+                     <i class="ri-layout-4-line services__icon"></i>
+                     <h3 class="services__title">Punjab Information Technology Board (PITB)<br><span style="font-size: 0.85rem; font-weight: 400;">March 2016 to September 2025</span></h3>
+                  </div>
+                  <p class="services__description">
+                     Senior developer managing multiple enterprise systems including Financial Reporting System, 
+                     HR Information Management System (HRIMS), e-Procurement module, and Budget Management System. 
+                     Led development of complex modules including payroll, travel desk automation, and admin operations processing.
+                  </p>
+               </div>
+
+               <div class="services__content">
+                  <div>
+                     <i class="ri-code-view services__icon"></i>
+                     <h3 class="services__title">Elite Store Pakistan<br><span style="font-size: 0.85rem; font-weight: 400;">September 2011 to Feb 2016</span></h3>
+                  </div>
+                  <p class="services__description">
+                     Team Lead for PHP, WordPress and custom CMS development. Supervised design and development of 
+                     50+ projects including WordPress sites, Shopify stores, WooCommerce implementations, and custom 
+                     PHP solutions. Managed backend development and distributed tasks to development team.
+                  </p>
+               </div>
+
+               <div class="services__content">
+                  <div>
+                     <i class="ri-function-add-line services__icon"></i>
+                     <h3 class="services__title">Advanced Development Skills</h3>
+                  </div>
+                  <p class="services__description">
+                     OOP PHP programming, Core PHP CMS development, CRUD systems, 
+                     API integrations (Facebook, Twitter, Pinterest, Instagram, PayPal, Authorize.net), 
+                     responsive design, browser compatibility optimization, and performance tuning.
+                  </p>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h2 class="section__title">Notable Projects</h2>
+            <span class="section__subtitle">Work Portfolio</span>
+
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <h3 class="projects__title">PITB Financial Reporting System</h3>
+                  <p class="projects__description">
+                     Advanced accounting system with chart of accounts, voucher management, ledger reports, cheque printing, 
+                     and bill booking generation. Includes complex financial processes for government accounting.
+                  </p>
+               </article>
+
+               <article class="projects__card">
+                  <h3 class="projects__title">PITB HRIMS System</h3>
+                  <p class="projects__description">
+                     Comprehensive Human Resource Management Information System with Personal Information Management, 
+                     attendance tracking, leave applications, performance appraisal, payroll processing, and SMS campaigns.
+                  </p>
+               </article>
+
+               <article class="projects__card">
+                  <h3 class="projects__title">e-Procurement Module</h3>
+                  <p class="projects__description">
+                     Automated procurement system with S1 and S2 form generation, lot and item tracking, delivery monitoring, 
+                     and comprehensive reporting for project materials management.
+                  </p>
+               </article>
+
+               <article class="projects__card">
+                  <h3 class="projects__title">EliteStore | WordPress E-Commerce</h3>
+                  <p class="projects__description">
+                     Full WordPress site with custom theme, slider plugins, newsletter integration, and gallery functionality. 
+                     <a href="https://www.elitestore.pk/" target="_blank" style="color: #0ea5e9;">Visit Site</a>
+                  </p>
+               </article>
+
+               <article class="projects__card">
+                  <h3 class="projects__title">Spearhead Marketing | Push Notifications</h3>
+                  <p class="projects__description">
+                     WordPress integration with Pass Slot API for push notifications. User panel with roles management, 
+                     template identifiers, and multi-device notification distribution.
+                     <a href="http://spearheadmarketing.com.au/" target="_blank" style="color: #0ea5e9;">Visit Site</a>
+                  </p>
+               </article>
+
+               <article class="projects__card">
+                  <h3 class="projects__title">Property Stalk | Custom CMS</h3>
+                  <p class="projects__description">
+                     Custom property management CMS with tenant adverts, agent modules, AJAX newsletter, Google Places API 
+                     integration, and property search functionality.
+                     <a href="http://propertystalk.com" target="_blank" style="color: #0ea5e9;">Visit Site</a>
+                  </p>
+               </article>
+
+               <article class="projects__card">
+                  <h3 class="projects__title">Qurbani | WooCommerce Platform</h3>
+                  <p class="projects__description">
+                     WooCommerce-based platform with dynamic content filtering, multi-currency support, breadcrumb navigation, 
+                     and donation system integration.
+                     <a href="http://qurbani.com/" target="_blank" style="color: #0ea5e9;">Visit Site</a>
+                  </p>
+               </article>
+
+               <article class="projects__card">
+                  <h3 class="projects__title">Duty Calculator Integration</h3>
+                  <p class="projects__description">
+                     Custom WordPress plugin integrating external Duty Calculator API using CURL, JSON parsing, 
+                     and real-time tax/shipment calculation for e-commerce platforms.
+                  </p>
+               </article>
+
+               <article class="projects__card">
+                  <h3 class="projects__title">TeeofLife CO | Shopify Store</h3>
+                  <p class="projects__description">
+                     Shopify e-commerce store with custom theme modifications, Facebook prayer wall, responsive video 
+                     integration, and Authorize.net payment gateway setup.
+                     <a href="http://www.teeoflife.co/" target="_blank" style="color: #0ea5e9;">Visit Site</a>
+                  </p>
+               </article>
+
+               <article class="projects__card">
+                  <h3 class="projects__title">WorldClass Advice | Membership Platform</h3>
+                  <p class="projects__description">
+                     Premium content platform built with Avada theme, tiered membership plans, wishlist functionality, 
+                     and gated video content for subscribers.
+                     <a href="http://www.worldclassadvice.com/" target="_blank" style="color: #0ea5e9;">Visit Site</a>
+                  </p>
+               </article>
+
+               <article class="projects__card">
+                  <h3 class="projects__title">Retail Solutions | WordPress Theme</h3>
+                  <p class="projects__description">
+                     PSD to WordPress conversion with Twitter feed integration, Contact Form 7, responsive design, 
+                     pixel-perfect implementation, and custom font integration.
+                     <a href="http://www.retailsolutions.ae/" target="_blank" style="color: #0ea5e9;">Visit Site</a>
+                  </p>
+               </article>
+
+               <article class="projects__card">
+                  <h3 class="projects__title">Audio Republic | Career Portal</h3>
+                  <p class="projects__description">
+                     Career form implementation with Google reCAPTCHA, WordPress plugin integration, 
+                     and comprehensive contact form functionality.
+                     <a href="http://www.audiorepublic.com/" target="_blank" style="color: #0ea5e9;">Visit Site</a>
+                  </p>
+               </article>
+
+               <article class="projects__card">
+                  <h3 class="projects__title">Additional Portfolio Projects</h3>
+                  <p class="projects__description">
+                     40+ additional projects including Orogold Cosmetics, Speak2md, Marcus Ginyard, 
+                     LGCharity, Oye.ae, Exotic, Catalog D7, and many more WordPress, HTML, and e-commerce implementations.
+                  </p>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h2 class="section__title">Get In Touch</h2>
+            <span class="section__subtitle">Contact Information</span>
+
+            <div class="contact__container container grid">
+               <div class="contact__info">
+                  <div class="contact__card">
+                     <i class="ri-map-pin-2-fill contact__card-icon"></i>
+                     <h3 class="contact__card-title">Location</h3>
+                     <span class="contact__card-data">1 Baron Grove, Mitcham CR4 4EH, UK</span>
+                  </div>
+
+                  <div class="contact__card">
+                     <i class="ri-phone-fill contact__card-icon"></i>
+                     <h3 class="contact__card-title">Phone</h3>
+                     <span class="contact__card-data">+44 7754928433</span>
+                  </div>
+
+                  <div class="contact__card">
+                     <i class="ri-mail-send-fill contact__card-icon"></i>
+                     <h3 class="contact__card-title">Email</h3>
+                     <span class="contact__card-data">waqardevelopment@gmail.com</span>
+                  </div>
+               </div>
+
+               <form class="contact__form">
+                  <div class="contact__form-group">
+                     <input type="text" placeholder="Your Name" class="contact__form-input" required>
+                  </div>
+
+                  <div class="contact__form-group">
+                     <input type="email" placeholder="Your Email" class="contact__form-input" required>
+                  </div>
+
+                  <div class="contact__form-group">
+                     <textarea placeholder="Your Message" class="contact__form-textarea" rows="5" required></textarea>
+                  </div>
+
+                  <button type="submit" class="button button--flex">
+                     Send Message <i class="ri-send-plane-fill"></i>
+                  </button>
+               </form>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container">
+            <div class="footer__content">
+               <h1 class="footer__title">Waqar Ahmed</h1>
+               <p class="footer__description">Web Applications Expert & Developer | 10+ Years of Experience</p>
+            </div>
+
+            <div class="footer__social">
+               <a href="mailto:waqardevelopment@gmail.com" class="footer__social-link">
+                  <i class="ri-mail-line"></i>
+               </a>
+               <a href="tel:+447754928433" class="footer__social-link">
+                  <i class="ri-phone-line"></i>
+               </a>
+            </div>
+
+            <p class="footer__copy">&copy; 2024 Waqar Ahmed. All rights reserved.</p>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+
+      <!--=============== EMAIL JS ===============-->
+      
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
